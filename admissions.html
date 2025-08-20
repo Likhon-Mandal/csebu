@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Department of CSE — University of Barishal</title>
+        <meta name="description"
+            content="Official website of the Department of Computer Science & Engineering, University of Barishal." />
+        <meta name="theme-color" content="#6439FF" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-k5C7iFWVNUpYv2SvKvhcC9DjAAXOeD0t3/6pD8M4fQMi1EJ2VwSYhmlNYsnb4r09nsN1VgehiVxX3X9zUqT0Ww=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+             uv: {
+            accent: '#152D35',    // darkest shade
+            secondary: '#345B63', // mid-tone
+            primary: '#D4ECDD',   // main / base
+            soft: '#D4ECDD',      // soft background (same as primary for now)
+          },
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          },
+          borderRadius: {
+            soft: '14px',
+          },
+          boxShadow: {
+            card: '0 10px 30px rgba(15,23,42,0.08)',
+          },
+        }
+      }
+    }
+  </script>
+
+        <!-- Fonts (optional) -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header class="sticky top-0 z-50 bg-uv-accent shadow-lg">
+            <div
+                class="container mx-auto px-4 flex items-center justify-between gap-6 min-h-[88px]">
+                <!-- Brand -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <span
+                        class="grid place-items-center w-12 h-12 rounded-2xl bg-white/10 text-white text-xl font-extrabold">
+                        <img class="rounded-full" src="assets//download.png"
+                            alt></span>
+                    <span class="hidden sm:block leading-5 text-white">
+                        <span class="block text-lg font-extrabold">Department of
+                            CSE</span>
+                        <span
+                            class="block text-[12px] font-semibold opacity-90">University
+                            of Barishal</span>
+                    </span>
+                </a>
+
+                <!-- Desktop menu -->
+                <nav class="hidden md:flex text-white items-center gap-2">
+                    <a href="index.html"
+                        class="nav-link ">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="programs.html" class="nav-link">Programs</a>
+                    <a href="faculty.html" class="nav-link">Faculty</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="news.html" class="nav-link">News</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="admissions.html"
+                        class="nav-link bg-uv-secondary px-3 py-1 rounded-lg">Admissions</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile button -->
+                <button id="menuBtn"
+                    class="md:hidden w-12 h-12 grid place-items-center rounded-xl text-white">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Mobile drawer -->
+            <div id="mobileMenu"
+                class="hidden md:hidden bg-uv-accent text-white border-t border-white/10">
+                <nav class="max-w-7xl mx-auto px-4 py-4 grid gap-1">
+                    <a href="index.html"
+                        class="nav-link ">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="programs.html" class="nav-link">Programs</a>
+                    <a href="faculty.html" class="nav-link">Faculty</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="news.html" class="nav-link">News</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="admissions.html"
+                        class="nav-link bg-uv-secondary px-3 py-1 rounded-lg">Admissions</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- ============== HERO (Admissions) ============== -->
+            <section class="relative overflow-hidden">
+                <!-- Background image (replace path) -->
+                <div class="absolute inset-0 -z-10 bg-cover bg-center"
+                    style="background-image: url('assets/terms.jpg');"></div>
+                <!-- Dark overlay for readability -->
+                <div
+                    class="absolute inset-0 -z-10 bg-gradient-to-b from-uv-accent/85 via-uv-secondary/60 to-uv-accent/90"></div>
+
+                <div class="mx-auto max-w-7xl px-4 py-20 md:py-28 text-white">
+                    <h1
+                        class="text-4xl md:text-5xl font-extrabold">Admissions</h1>
+                    <p class="mt-3 max-w-2xl text-white/90 md:text-lg">
+                        Apply to the Department of CSE — where strong
+                        fundamentals meet hands-on learning and research.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ============== OVERVIEW ============== -->
+            <section class="py-12 md:py-16">
+                <div class="mx-auto max-w-7xl px-4">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-uv-accent">Why
+                        CSE at UoB?</h2>
+                    <p class="mt-2 text-slate-600 max-w-3xl">
+                        Learn from dedicated faculty, build projects in modern
+                        labs, and join a collaborative community of
+                        problem-solvers.
+                    </p>
+
+                    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5">
+                            <i
+                                class="fa-solid fa-microscope text-uv-secondary text-2xl"></i>
+                            <h3 class="mt-3 font-bold text-uv-accent">Research
+                                Culture</h3>
+                            <p class="text-sm text-slate-600 mt-1">AI, systems,
+                                data, and more.</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5">
+                            <i
+                                class="fa-solid fa-gears text-uv-secondary text-2xl"></i>
+                            <h3 class="mt-3 font-bold text-uv-accent">Hands-on
+                                Labs</h3>
+                            <p class="text-sm text-slate-600 mt-1">Modern
+                                facilities & projects.</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5">
+                            <i
+                                class="fa-solid fa-people-group text-uv-secondary text-2xl"></i>
+                            <h3
+                                class="mt-3 font-bold text-uv-accent">Mentoring</h3>
+                            <p class="text-sm text-slate-600 mt-1">Close
+                                guidance & support.</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5">
+                            <i
+                                class="fa-solid fa-briefcase text-uv-secondary text-2xl"></i>
+                            <h3 class="mt-3 font-bold text-uv-accent">Career
+                                Focus</h3>
+                            <p class="text-sm text-slate-600 mt-1">Internships &
+                                placements.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============== INTAKES & DEADLINES ============== -->
+            <section class="py-12 md:py-16 bg-uv-primary">
+                <div class="mx-auto max-w-7xl px-4">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-uv-accent">Intakes
+                        & Deadlines</h2>
+
+                    <div class="mt-8 grid gap-6 md:grid-cols-3">
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-uv-accent">Spring
+                                Intake</h3>
+                            <p class="text-sm text-slate-600 mt-1">Applications
+                                open: <span class="font-medium">Nov</span></p>
+                            <p class="text-sm text-slate-600">Deadline: <span
+                                    class="font-medium">Dec 31</span></p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-uv-accent">Summer
+                                Intake</h3>
+                            <p class="text-sm text-slate-600 mt-1">Applications
+                                open: <span class="font-medium">Feb</span></p>
+                            <p class="text-sm text-slate-600">Deadline: <span
+                                    class="font-medium">Mar 31</span></p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-uv-accent">Fall
+                                Intake</h3>
+                            <p class="text-sm text-slate-600 mt-1">Applications
+                                open: <span class="font-medium">Jun</span></p>
+                            <p class="text-sm text-slate-600">Deadline: <span
+                                    class="font-medium">Jul 31</span></p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="files/admissions-calendar.pdf"
+                            class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-uv-secondary text-white font-semibold hover:bg-uv-accent transition">
+                            <i class="fa-solid fa-calendar-days"></i> Download
+                            Calendar
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============== ELIGIBILITY & DOCUMENTS ============== -->
+            <section class="py-12 md:py-16">
+                <div class="mx-auto max-w-7xl px-4 grid gap-8 md:grid-cols-2">
+                    <div>
+                        <h2
+                            class="text-2xl md:text-3xl font-extrabold text-uv-accent">Eligibility
+                            (B.Sc.)</h2>
+                        <ul class="mt-4 space-y-2 text-slate-700 text-sm">
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-check text-uv-secondary mt-1"></i>
+                                Completed HSC/A-Level or equivalent with Math &
+                                Physics</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-check text-uv-secondary mt-1"></i>
+                                Minimum GPA/grades per university policy</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-check text-uv-secondary mt-1"></i>
+                                Entrance test/interview as applicable</li>
+                        </ul>
+
+                        <h3 class="mt-6 font-bold text-uv-accent">Eligibility
+                            (M.Sc.)</h3>
+                        <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-check text-uv-secondary mt-1"></i>
+                                B.Sc. in CSE/related field</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-check text-uv-secondary mt-1"></i>
+                                Minimum CGPA requirement</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-check text-uv-secondary mt-1"></i>
+                                Statement of purpose & references</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2
+                            class="text-2xl md:text-3xl font-extrabold text-uv-accent">Required
+                            Documents</h2>
+                        <ul class="mt-4 space-y-2 text-slate-700 text-sm">
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-file-lines text-uv-secondary mt-1"></i>
+                                Academic transcripts & certificates</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-id-card text-uv-secondary mt-1"></i>
+                                National ID/Passport photo page</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-image text-uv-secondary mt-1"></i>
+                                Recent passport-size photograph</li>
+                            <li class="flex gap-3"><i
+                                    class="fa-solid fa-language text-uv-secondary mt-1"></i>
+                                English proficiency (if required)</li>
+                        </ul>
+
+                        <div class="mt-6">
+                            <a href="files/checklist.pdf"
+                                class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-uv-secondary text-white text-sm font-semibold hover:bg-uv-accent transition">
+                                <i class="fa-solid fa-download"></i> Download
+                                Checklist
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============== HOW TO APPLY (steps) ============== -->
+            <section class="py-12 md:py-16 bg-uv-primary">
+                <div class="mx-auto max-w-7xl px-4">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-uv-accent">How
+                        to Apply</h2>
+
+                    <div class="mt-8 grid gap-6 md:grid-cols-5">
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5 text-center">
+                            <div
+                                class="mx-auto w-10 h-10 grid place-items-center rounded-lg bg-uv-secondary text-white font-bold">1</div>
+                            <p class="mt-3 text-sm text-slate-700">Create
+                                account</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5 text-center">
+                            <div
+                                class="mx-auto w-10 h-10 grid place-items-center rounded-lg bg-uv-secondary text-white font-bold">2</div>
+                            <p class="mt-3 text-sm text-slate-700">Fill
+                                application</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5 text-center">
+                            <div
+                                class="mx-auto w-10 h-10 grid place-items-center rounded-lg bg-uv-secondary text-white font-bold">3</div>
+                            <p class="mt-3 text-sm text-slate-700">Upload
+                                documents</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5 text-center">
+                            <div
+                                class="mx-auto w-10 h-10 grid place-items-center rounded-lg bg-uv-secondary text-white font-bold">4</div>
+                            <p class="mt-3 text-sm text-slate-700">Pay
+                                application fee</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-5 text-center">
+                            <div
+                                class="mx-auto w-10 h-10 grid place-items-center rounded-lg bg-uv-secondary text-white font-bold">5</div>
+                            <p class="mt-3 text-sm text-slate-700">Submit &
+                                track</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="https://example.com/apply"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-uv-secondary text-white font-semibold hover:bg-uv-accent transition">
+                            <i class="fa-solid fa-paper-plane"></i> Apply Online
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============== FEES & SCHOLARSHIPS ============== -->
+            <section class="py-12 md:py-16">
+                <div class="mx-auto max-w-7xl px-4">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-uv-accent">Fees
+                        & Scholarships</h2>
+
+                    <div class="mt-8 grid gap-6 md:grid-cols-3">
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-uv-accent">Tuition
+                                (B.Sc.)</h3>
+                            <p class="text-sm text-slate-600 mt-1">Per
+                                university schedule.</p>
+                            <a href="files/tuition.pdf"
+                                class="mt-3 inline-block text-uv-secondary font-semibold hover:underline text-sm">View
+                                details</a>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-6">
+                            <h3 class="font-bold text-uv-accent">Tuition
+                                (M.Sc.)</h3>
+                            <p class="text-sm text-slate-600 mt-1">Per
+                                university schedule.</p>
+                            <a href="files/tuition.pdf"
+                                class="mt-3 inline-block text-uv-secondary font-semibold hover:underline text-sm">View
+                                details</a>
+                        </div>
+                        <div
+                            class="rounded-xl border border-slate-200 bg-white p-6">
+                            <h3
+                                class="font-bold text-uv-accent">Scholarships</h3>
+                            <p class="text-sm text-slate-600 mt-1">Merit &
+                                need-based opportunities.</p>
+                            <a href="files/scholarships.pdf"
+                                class="mt-3 inline-block text-uv-secondary font-semibold hover:underline text-sm">See
+                                options</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============== HELP / CONTACT ============== -->
+            <section class="py-12 md:py-16 bg-uv-primary">
+                <div class="mx-auto max-w-7xl px-4">
+                    <div
+                        class="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                        <h3 class="text-xl font-bold text-uv-accent">Need
+                            help?</h3>
+                        <p class="mt-1 text-slate-600 text-sm">Questions about
+                            eligibility, documents, or deadlines? We’re here to
+                            help.</p>
+                        <div class="mt-4 flex flex-col sm:flex-row gap-3">
+                            <a href="contact.html"
+                                class="px-5 py-3 rounded-lg bg-uv-secondary text-white font-semibold hover:bg-uv-accent transition">
+                                Contact Admissions
+                            </a>
+                            <a href="files/faq-admissions.pdf"
+                                class="px-5 py-3 rounded-lg bg-slate-100 text-slate-700 font-semibold hover:bg-slate-200 transition">
+                                Admissions FAQ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="bg-uv-accent text-white mt-16">
+            <div
+                class="max-w-7xl mx-auto px-4 py-12 grid gap-10 md:grid-cols-4">
+
+                <!-- Brand / About -->
+                <div class="md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <span
+                            class="grid place-items-center w-12 h-12 rounded-2xl bg-white/20 text-white text-xl font-extrabold">CSE</span>
+                        <span class="leading-5">
+                            <span class="block font-extrabold text-lg">Dept. of
+                                CSE</span>
+                            <span class="block text-sm opacity-80">University of
+                                Barishal</span>
+                        </span>
+                    </a>
+                    <p class="mt-4 text-sm leading-relaxed opacity-90 max-w-md">
+                        The Department of Computer Science & Engineering at the
+                        University of Barishal is committed to excellence in
+                        teaching, research, and innovation, shaping the next
+                        generation of engineers.
+                    </p>
+                    <div class="flex gap-4 mt-5">
+                        <a href="#" class="hover:text-uv-soft"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-uv-soft"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-uv-soft"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-uv-soft"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html"
+                                class="hover:text-uv-soft">About</a></li>
+                        <li><a href="programs.html"
+                                class="hover:text-uv-soft">Programs</a></li>
+                        <li><a href="faculty.html"
+                                class="hover:text-uv-soft">Faculty</a></li>
+                        <li><a href="research.html"
+                                class="hover:text-uv-soft">Research</a></li>
+                        <li><a href="contact.html"
+                                class="hover:text-uv-soft">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa-solid fa-location-dot mr-2"></i>
+                            University of Barishal, Barishal, Bangladesh</li>
+                        <li><i class="fa-solid fa-phone mr-2"></i>
+                            +880-123-456-789</li>
+                        <li><i class="fa-solid fa-envelope mr-2"></i>
+                            cse@barishal.ac.bd</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Strip -->
+            <div class="border-t border-white/20">
+                <div
+                    class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between text-sm opacity-80">
+                    <p>© 2025 Department of CSE, University of Barishal. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- script: ONLY for mobile click toggle -->
+        <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+  });
+</script>
+
+    </body>
+</html>
